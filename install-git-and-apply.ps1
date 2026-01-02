@@ -17,9 +17,9 @@ $cwd = Get-Location
 Write-Info "Lokasi kerja: $cwd"
 
 # Cek keberadaan file patch
-$patchPath = Join-Path -Path $cwd -ChildPath 'replace-agung-josep.patch'
+$patchPath = Join-Path -Path $cwd -ChildPath 'replace-josep.patch'
 $hasPatch = Test-Path $patchPath
-if ($hasPatch) { Write-Info "Patch ditemukan: $patchPath" } else { Write-Warn "Patch 'replace-agung-josep.patch' tidak ditemukan di root. Skrip akan tetap mencoba fallback replace." }
+if ($hasPatch) { Write-Info "Patch ditemukan: $patchPath" } else { Write-Warn "Patch 'replace-josep.patch' tidak ditemukan di root. Skrip akan tetap mencoba fallback replace." }
 
 # Cek Git
 $gitCmd = Get-Command git -ErrorAction SilentlyContinue
