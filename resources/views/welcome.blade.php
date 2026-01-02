@@ -1,6 +1,6 @@
 @extends('layouts.ft')
 
-@section('title', 'Selamat Datang - Sistem Inventory Gwe')
+@section('title', 'Sistem Inventory Josep')
 
 @section('content')
 
@@ -128,7 +128,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div class="fade-in-up">
-                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Selamat Datang Di Sistem Inventory Josep RISM</h1>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Selamat Datang Di Sistem Inventory Josep</h1>
                     <p class="text-lg text-black/75 mb-6">Sistem Inventory Josep adalah solusi terintegrasi yang mengotomatiskan pencatatan stok, pemantauan barang masuk-keluar, dan analisis persediaan secara real-time, sehingga bisnis Anda dapat mengurangi waste, mengoptimalkan stok, dan meningkatkan efisiensi operasional.</p>
 
                     <!-- Action Buttons -->
