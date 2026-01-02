@@ -13,7 +13,7 @@ class DashboardController extends Controller
     {
         $totalProducts = Product::count();
         $totalCategories = Category::count();
-        $lowStockProducts = Product::where('quantity', '<', 'minimum_stock')->get();
+        $lowStockProducts = Product::whereColumn('quantity', '<', 'minimum_stock')->get();
 
         // Ambil 5 entri terbaru stok masuk dan stok keluar
         $recentIn = StockMovement::with('product')

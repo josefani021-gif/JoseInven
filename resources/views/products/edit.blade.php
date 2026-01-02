@@ -50,7 +50,7 @@
 <div class="min-h-screen bg-black text-black py-10">
     <div class="max-w-3xl mx-auto">
 
-        <h2 class="text-3xl font-bold mb-6 text-black">✏️ Ubah Produk</h2>
+        <h2 class="text-3xl font-bold mb-6 text-black"><x-icon name="edit" class="inline w-6 h-6 mr-2"/>Ubah Produk</h2>
 
         <div class="glass-card">
 

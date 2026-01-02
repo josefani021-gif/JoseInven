@@ -1,6 +1,6 @@
 @extends('layouts.ft')
 
-@section('title', 'Selamat Datang - Sistem Inventory Mbah Jiwo')
+@section('title', 'Selamat Datang - Sistem Inventory Gwe')
 
 @section('content')
 
@@ -128,8 +128,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Left Content -->
                 <div class="fade-in-up">
-                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Selamat Datang Di Sistem Inventory Agung Berkah</h1>
-                    <p class="text-lg text-black/75 mb-6">Sistem Inventory Agung adalah solusi terintegrasi yang mengotomatiskan pencatatan stok, pemantauan barang masuk-keluar, dan analisis persediaan secara real-time, sehingga bisnis Anda dapat mengurangi waste, mengoptimalkan stok, dan meningkatkan efisiensi operasional.</p>
+                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Selamat Datang Di Sistem Inventory Josep RISM</h1>
+                    <p class="text-lg text-black/75 mb-6">Sistem Inventory Josep adalah solusi terintegrasi yang mengotomatiskan pencatatan stok, pemantauan barang masuk-keluar, dan analisis persediaan secara real-time, sehingga bisnis Anda dapat mengurangi waste, mengoptimalkan stok, dan meningkatkan efisiensi operasional.</p>
 
                     <!-- Action Buttons -->
                     <div class="flex flex-wrap gap-3 mb-8">
@@ -174,7 +174,7 @@
                                 </div>
                                 <div class="text-sm font-medium text-black/70">Dashboard Preview</div>
                             </div>
-                            
+
                             <!-- Mock Dashboard -->
                             <div class="space-y-4">
                                 <!-- Stats Row -->
@@ -192,7 +192,7 @@
                                         <div class="text-xl font-bold text-amber-600">12</div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Product List -->
                                 <div class="space-y-2">
                                     <div class="flex items-center justify-between p-2 bg-white/50 rounded">
@@ -213,7 +213,7 @@
                                             <div class="text-xs text-green-600">+5%</div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="flex items-center justify-between p-2 bg-white/50 rounded">
                                         <div class="flex items-center">
                                             <div class="w-8 h-8 bg-green-100 rounded mr-3 flex items-center justify-center">
@@ -233,7 +233,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Quick Action -->
                                 <div class="pt-4 border-t border-black/10">
                                     <div class="flex space-x-2">
@@ -247,7 +247,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- Floating Elements -->
                         <div class="absolute -top-4 -right-4 w-24 h-24 bg-blue-100 rounded-full opacity-50 blur-sm"></div>
                         <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-amber-100 rounded-full opacity-50 blur-sm"></div>
@@ -264,7 +264,7 @@
                 <h2 class="text-3xl font-bold mb-3 text-gray-900">Fitur Unggulan Sistem Inventory</h2>
                 <p class="text-lg text-black/70 max-w-3xl mx-auto">Solusi lengkap untuk mengelola bisnis Anda dengan lebih efisien dan terorganisir</p>
             </div>
-            
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Feature 1 -->
                 <div class="glass-card p-6">
@@ -276,7 +276,7 @@
                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Manajemen Stok Real-time</h3>
                     <p class="text-sm text-black/70">Input, update, dan pantau stok secara realtime dengan riwayat pergerakan produk yang lengkap dan terperinci.</p>
                 </div>
-                
+
                 <!-- Feature 2 -->
                 <div class="glass-card p-6">
                     <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-4">
@@ -287,7 +287,7 @@
                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Scan & Cek Cepat</h3>
                     <p class="text-sm text-black/70">Pindai barcode/QR untuk melihat detail produk atau melakukan transaksi cepat tanpa perlu input manual.</p>
                 </div>
-                
+
                 <!-- Feature 3 -->
                 <div class="glass-card p-6">
                     <div class="w-12 h-12 bg-amber-50 rounded-lg flex items-center justify-center mb-4">
@@ -298,7 +298,7 @@
                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Cetak Label Custom</h3>
                     <p class="text-sm text-black/70">Buat dan cetak label produk dalam format PDF/PNG dengan template custom untuk inventaris atau penjualan.</p>
                 </div>
-                
+
                 <!-- Feature 4 -->
                 <div class="glass-card p-6">
                     <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-4">
@@ -309,7 +309,7 @@
                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Laporan & Ekspor Data</h3>
                     <p class="text-sm text-black/70">Ekspor laporan masuk/keluar, penjualan, dan stok ke CSV, PDF, atau Excel untuk analisa lebih lanjut.</p>
                 </div>
-                
+
                 <!-- Feature 5 -->
                 <div class="glass-card p-6">
                     <div class="w-12 h-12 bg-red-50 rounded-lg flex items-center justify-center mb-4">
@@ -320,7 +320,7 @@
                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Multi-User & Role</h3>
                     <p class="text-sm text-black/70">Atur akses untuk admin, gudang, dan kasir sesuai kebutuhan operasional dengan sistem permission yang fleksibel.</p>
                 </div>
-                
+
                 <!-- Feature 6 -->
                 <div class="glass-card p-6">
                     <div class="w-12 h-12 bg-teal-50 rounded-lg flex items-center justify-center mb-4">
@@ -372,7 +372,7 @@
     // Intersection Observer untuk animasi section
     document.addEventListener('DOMContentLoaded', function() {
         const sections = document.querySelectorAll('section');
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -382,18 +382,18 @@
         }, {
             threshold: 0.1
         });
-        
+
         sections.forEach(section => {
             observer.observe(section);
         });
-        
+
         // Smooth scroll untuk anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({

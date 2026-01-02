@@ -111,7 +111,7 @@ class DatabaseSeeder extends Seeder
 
         // Create users if not exists
         User::firstOrCreate([
-            'email' => 'admin@inventory.com',
+            'email' => 'admin.login@example.com',
         ], [
             'name' => 'Admin User',
             'password' => bcrypt('admin123'),

@@ -5,9 +5,10 @@
 @section('content')
 <div class="glass-card p-6 rounded-2xl">
     <div class="flex items-center justify-between mb-4">
-        <h2 class="text-2xl font-bold text-black">📊 Laporan Inventory</h2>
+    <h2 class="text-2xl font-bold text-black"><x-icon name="chart" class="inline-block mr-2 w-6 h-6"/>Laporan Inventory</h2>
         <div class="flex items-center gap-2">
             <a href="{{ route('reports.export') }}" class="block glass-menu-item text-black">Export CSV</a>
+            <a href="{{ route('reports.export', ['format' => 'pdf']) }}" class="block glass-menu-item text-black">Export PDF</a>
             <a href="{{ route('reports.in') }}" class="block glass-menu-item text-black">Laporan Stok Masuk</a>
             <a href="{{ route('reports.out') }}" class="block glass-menu-item text-black">Laporan Stok Keluar</a>
         </div>

@@ -6,6 +6,7 @@ use App\Models\Product;
 use App\Models\StockMovement;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Barryvdh\DomPDF\Facade\Pdf as PDF;
 
 class ReportsController extends Controller
 {
@@ -65,7 +66,16 @@ class ReportsController extends Controller
             ->groupBy('category_id')
             ->with('category')
             ->get();
+        // If PDF requested, render PDF using a simple blade view
+        if ($request->input('format') === 'pdf') {
+            $filename = 'inventory_report_' . date('Ymd_His') . '.pdf';
+            $pdf = PDF::loadView('reports.pdf', compact('byCategory', 'totalValue'))
+                ->setPaper('a4', 'portrait');
 
+            return $pdf->download($filename);
+        }
+
+        // Default: CSV export
         $filename = 'inventory_report_' . date('Ymd_His') . '.csv';
 
         $callback = function () use ($byCategory, $totalValue) {

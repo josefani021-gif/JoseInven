@@ -5,7 +5,7 @@
 @section('content')
 <div class="glass-card p-6 rounded-2xl">
     <div class="flex items-center justify-between mb-4">
-        <h2 class="text-2xl font-bold text-black">⬇️ Laporan Stok Masuk</h2>
+        <h2 class="text-2xl font-bold text-black"><x-icon name="download" class="inline-block mr-2 w-6 h-6"/>Laporan Stok Masuk</h2>
         <div class="flex items-center space-x-2">
             <form method="GET" class="flex items-center space-x-2">
                 <input type="date" name="from" value="{{ request('from') }}" class="border px-2 py-1 bg-transparent text-black">

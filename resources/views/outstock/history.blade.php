@@ -18,8 +18,8 @@
 <div class="min-h-screen bg-black text-black py-10">
     <div class="max-w-7xl mx-auto">
         <div class="glass-card rounded-2xl">
-            <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold text-black">📤 Riwayat Stok Keluar</h2>
+                <div class="flex items-center justify-between mb-4">
+                <h2 class="text-xl font-bold text-black"><x-icon name="upload" class="inline-block mr-2 w-6 h-6"/>Riwayat Stok Keluar</h2>
                 <a href="{{ route('outstock.create') }}" class="block glass-menu-item text-black">Catat Keluar</a>
             </div>
 

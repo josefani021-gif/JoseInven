@@ -19,11 +19,11 @@
 
 		/* Background Gradient - Aesthetic & Modern */
 		body.bg-black {
-			background: linear-gradient(135deg, 
-				#f8fafc 0%, 
-				#f1f5f9 25%, 
-				#e2e8f0 50%, 
-				#f1f5f9 75%, 
+			background: linear-gradient(135deg,
+				#f8fafc 0%,
+				#f1f5f9 25%,
+				#e2e8f0 50%,
+				#f1f5f9 75%,
 				#f8fafc 100%) !important;
 			color: #1e293b !important;
 			min-height: 100vh;
@@ -40,11 +40,11 @@
 
 		/* Glass Card - Modern Dashboard Cards */
 		.glass-card {
-			background: linear-gradient(135deg, 
-				rgba(255, 255, 255, 0.9) 0%, 
+			background: linear-gradient(135deg,
+				rgba(255, 255, 255, 0.9) 0%,
 				rgba(255, 255, 255, 0.95) 100%);
 			border: 1px solid rgba(255, 255, 255, 0.4);
-			box-shadow: 
+			box-shadow:
 				0 20px 40px rgba(0, 0, 0, 0.08),
 				0 10px 20px rgba(0, 0, 0, 0.04),
 				inset 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -87,7 +87,7 @@
 		@if (session('success'))
 			<div class="glass-card mb-6 bg-green-900/60 border border-green-700 px-6 py-4 rounded-xl">
 				<div class="flex items-center gap-3">
-					<span class="text-xl">✅</span>
+					<x-icon name="check" class="text-xl text-green-300"/>
 					<span class="font-medium">{{ session('success') }}</span>
 				</div>
 			</div>
@@ -96,7 +96,7 @@
 		@if (session('error'))
 			<div class="glass-card mb-6 bg-red-900/60 border border-red-700 px-6 py-4 rounded-xl">
 				<div class="flex items-center gap-3">
-					<span class="text-xl">❌</span>
+					<x-icon name="close" class="text-xl text-red-300"/>
 					<span class="font-medium">{{ session('error') }}</span>
 				</div>
 			</div>
@@ -107,7 +107,7 @@
 
 	<footer>
 		<p class="font-medium">&copy; {{ date('Y') }} Sistem Inventory. Hak cipta dilindungi.</p>
-		<p class="text-sm opacity-80 mt-2">Version 1.0 | Agung Design</p>
+					<p class="text-sm opacity-80 mt-2">Version 1.0 | Josep Design</p>
 	</footer>
 
 	@stack('scripts')

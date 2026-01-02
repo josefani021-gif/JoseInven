@@ -38,7 +38,7 @@
 
     {{-- Header --}}
     <div class="flex justify-between items-center mb-6">
-        <h2 class="text-3xl font-bold text-black-300">📦 Produk</h2>
+        <h2 class="text-3xl font-bold text-black-300"><x-icon name="box" class="inline w-6 h-6 mr-2 text-black-300"/>Produk</h2>
 
         @if(auth()->user() && auth()->user()->role === 'admin')
             <a href="{{ route('products.create') }}"
@@ -75,7 +75,7 @@
                                 <td class="px-4 py-3">
                                     <button class="show-barcode text-cyan-300 hover:text-cyan-200 text-xl"
                                             data-sku="{{ $product->sku }}">
-                                        👁️
+                                        <x-icon name="eye" class="w-5 h-5" />
                                     </button>
                                 </td>
 
@@ -90,7 +90,7 @@
 
                                 <td class="px-4 py-3">
                                     @if ($product->quantity == 0)
-                                        <span class="glass-badge bg-red-400/50 text-red-300">Habis</span>
+                                        <span class="glass-badge bg-red-400/50 text-black-300">Habis</span>
                                     @elseif ($product->quantity < $product->minimum_stock)
                                         <span class="glass-badge bg-yellow-400/50 text-black-300">Stok Rendah</span>
                                     @else
@@ -138,8 +138,8 @@
             <p class="text-center text-slate-400 py-6">
                 Tidak ada produk.
                 @if(auth()->user() && auth()->user()->role === 'admin')
-                    <a href="{{ route('products.create') }}" class="block glass-menu-item">
-                        Tambah Produk →
+                    <a href="{{ route('products.create') }}" class="block glass-menu-item inline-flex items-center gap-2">
+                        Tambah Produk <x-icon name="plus" class="w-4 h-4" />
                     </a>
                 @endif
             </p>
@@ -164,7 +164,7 @@
             <div class="glass-card p-6 rounded-xl max-w-md w-full relative">
                 <button id="barcode-modal-close"
                         class="absolute top-2 right-2 bg-white/10 px-2 py-1 rounded hover:bg-white/20">
-                    ✕
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 </button>
 
                 <h3 class="text-lg font-semibold text-cyan-300 mb-3">Barcode Produk</h3>

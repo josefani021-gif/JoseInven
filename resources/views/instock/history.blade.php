@@ -19,7 +19,7 @@
     <div class="max-w-7xl mx-auto">
         <div class="glass-card rounded-2xl">
             <div class="flex items-center justify-between mb-4">
-                <h2 class="text-xl font-bold text-black">⬇️ Riwayat Stok Masuk</h2>
+                <h2 class="text-xl font-bold text-black"><x-icon name="download" class="inline-block mr-2 w-6 h-6"/>Riwayat Stok Masuk</h2>
                 <a href="{{ route('instock.create') }}" class="block glass-menu-item text-black">Catat Stok Masuk</a>
             </div>
 

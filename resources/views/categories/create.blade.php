@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="max-w-2xl mx-auto">
-    <h2 class="text-3xl font-bold mb-6 text-black-100 flex items-center gap-3"> <span class="accent-green text-3xl">📁</span> Tambah Kategori Baru</h2>
+    <h2 class="text-3xl font-bold mb-6 text-black-100 flex items-center gap-3"> <x-icon name="folder" class="text-3xl inline-block"/> Tambah Kategori Baru</h2>
 
     <form action="{{ route('categories.store') }}" method="POST" class="glass-card p-6 rounded-2xl">
         @csrf

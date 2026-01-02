@@ -32,7 +32,7 @@
     .glass-tag { background: rgba(0,255,255,0.08); color: #00343a; padding: .15rem .5rem; border-radius: .5rem; font-size: .75rem; }
 </style>
 <div class="flex justify-between items-center mb-6">
-    <h2 class="text-3xl font-bold text-black-100 flex items-center gap-3"> <span class="accent-green text-3xl text-black">📁</span> Kategori</h2>
+    <h2 class="text-3xl font-bold text-black-100 flex items-center gap-3"> <x-icon name="folder" class="text-3xl text-black inline-block"/> Kategori</h2>
     <a href="{{ route('categories.create') }}" class="block glass-menu-item text-black">Tambah Kategori</a>
 </div>
 <div class="glass-card p-6 rounded-2xl">

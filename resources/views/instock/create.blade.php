@@ -50,7 +50,7 @@
 <div class="min-h-screen bg-black text-black py-10">
     <div class="max-w-3xl mx-auto">
 
-        <h2 class="text-3xl font-bold mb-6 text-black">⬇️ Tambah Stok (Masuk)</h2>
+        <h2 class="text-3xl font-bold mb-6 text-black"><x-icon name="download" class="inline-block mr-2 w-6 h-6"/>Tambah Stok (Masuk)</h2>
 
         <div class="glass-card">
 

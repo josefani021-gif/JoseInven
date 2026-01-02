@@ -15,8 +15,8 @@
 
             <div class="space-x-3">
                 <a href="{{ route('products.index') }}"
-                    class="block glass-menu-item text-black">
-                    ⬅ Kembali
+                    class="block glass-menu-item text-black inline-flex items-center gap-2">
+                    <x-icon name="arrow-left" class="w-4 h-4"/> Kembali
                 </a>
             </div>
         </div>
@@ -35,7 +35,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             <div class="glass-card">
-                <h3 class="text-xl font-bold mb-4 text-black-200">🧾 Informasi Produk</h3>
+                <h3 class="text-xl font-bold mb-4 text-black-200"><x-icon name="receipt" class="inline w-5 h-5 mr-2"/>Informasi Produk</h3>
 
                 <div class="space-y-3">
 
@@ -65,7 +65,7 @@
             </div>
 
             <div class="glass-card">
-                <h3 class="text-xl font-bold mb-4 text-black-200">📦 Informasi Stok</h3>
+                <h3 class="text-xl font-bold mb-4 text-black-200"><x-icon name="box" class="inline w-5 h-5 mr-2"/>Informasi Stok</h3>
 
                 <div class="space-y-3">
 
@@ -73,7 +73,7 @@
                         <span class="font-semibold text-black-200">Barcode:</span>
                         <button type="button" class="show-barcode-single text-3xl"
                             data-sku="{{ $product->sku }}">
-                            👁️
+                            <x-icon name="eye" class="w-6 h-6" />
                         </button>
                     </div>
 
@@ -123,7 +123,7 @@
         @if ($product->stockMovements->count() > 0)
 
             <div class="glass-card mt-10">
-                <h3 class="text-2xl font-bold text-black mb-4">📊 Riwayat Pergerakan Stok</h3>
+                <h3 class="text-2xl font-bold text-black mb-4"><x-icon name="chart" class="inline w-5 h-5 mr-2"/>Riwayat Pergerakan Stok</h3>
 
                 <table class="w-full text-left text-black text-sm glass-table">
                     <thead class="bg-white/10">

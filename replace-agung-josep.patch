@@ -1,0 +1,20 @@
+*** Begin Patch
+*** Update File: resources/views/welcome.blade.php
+@@
+-                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Selamat Datang Di Sistem Inventory Ojsep RISM</h1>
+-                    <p class="text-lg text-black/75 mb-6">Sistem Inventory Agung adalah solusi terintegrasi yang mengotomatiskan pencatatan stok, pemantauan barang masuk-keluar, dan analisis persediaan secara real-time, sehingga bisnis Anda dapat mengurangi waste, mengoptimalkan stok, dan meningkatkan efisiensi operasional.</p>
++                    <h1 class="text-4xl md:text-5xl font-extrabold mb-4 text-gray-900">Selamat Datang Di Sistem Inventory Josep RISM</h1>
++                    <p class="text-lg text-black/75 mb-6">Sistem Inventory Josep adalah solusi terintegrasi yang mengotomatiskan pencatatan stok, pemantauan barang masuk-keluar, dan analisis persediaan secara real-time, sehingga bisnis Anda dapat mengurangi waste, mengoptimalkan stok, dan meningkatkan efisiensi operasional.</p>
+*** End Patch
+*** Begin Patch
+*** Update File: resources/views/layouts/ft.blade.php
+@@
+-                    <p class="text-sm opacity-80 mt-2">Version 1.0 | Agung Design</p>
++                    <p class="text-sm opacity-80 mt-2">Version 1.0 | Josep Design</p>
+*** End Patch
+*** Begin Patch
+*** Update File: resources/views/layouts/app.blade.php
+@@
+-                    <p class="text-sm opacity-80 mt-2">Version 1.0 | Agung Design</p>
++                    <p class="text-sm opacity-80 mt-2">Version 1.0 | Josep Design</p>
+*** End Patch
